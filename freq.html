@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf8">
+        <title>Allele Frequency Equation</title>
+        <link rel="stylesheet" href="freq.css">
+        <script src='exact-math.js'></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="recursion-eq.js"></script>
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    </head>
+    <body>
+        <h1>Allele Frequency Equation</h1>
+        <h2>$$p_{a}{}'= \frac{p_{a}{}^{2}W_{aa} + p_{A}p_{a}W_{Aa}}{p_{a}{}^{2}W_{aa} + 2p_{A}p_{a}W_{Aa} + p_{A}{}^{2}W_{AA}}$$</h2>
+        <div class="inputs">
+            <div class="top">
+                <div class="inner">
+                    <label for="pa">$$p_{a}$$</label>
+                    <input type="text" id="pa" name="pa">
+                </div>
+                <div class="inner">
+                    <label for="pA">$$p_{A}$$</label>
+                    <input type="text" id="pA" name="pA">
+                </div>
+            </div><br>
+            <div class="bottom">
+                <div class="inner">
+                    <label for="w_aa">$$W_{aa}$$</label>
+                    <input type="text" id="w_aa" name="w_aa">
+                </div>
+                <div class="inner">
+                    <label for="w_Aa">$$W_{Aa}$$</label>
+                    <input type="text" id="w_Aa" name="w_Aa">
+                </div>
+                <div class="inner">
+                    <label for="w_AA">$$W_{AA}$$</label>
+                    <input type="text" id="w_AA" name="w_AA">
+                </div>
+            </div>
+            <button type=button, id="calculate">Calculate $$p_{a}{}'$$</button>
+            <button type=button, id = "set">Set $$p_{a} = p_{a}{}'$$</button>
+            <p>$$p_{a}{}'=$$</p>
+            <p id=result></p>
+            <p id=equilibrium></p></p>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,28 @@
+h1, p {
+    text-align: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+button {
+    margin-top: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.inner {
+    float: inline-start;
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.top, .bottom {
+    width: 90%;
+    margin: 0 auto;
+    clear: both;
+    text-align: center;
+}
+
+.inputs {
+    width: 100%;
+    text-align: center;
+}
